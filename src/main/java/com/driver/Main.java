@@ -2,6 +2,7 @@
  * Main class of the Java program. 
  * 
  */
+package com.driver;
 import java.util.*;
 
 public class Main {
@@ -15,7 +16,7 @@ public class Main {
         
         char[] alphabets = "abcdefghijklmnopqrstuvwyz".toCharArray();
         
-        Queue<Character> q = new LinkedList();
+        Queue<Character> q = new LinkedList<>();
         
         for(int i=0; i<alphabets.length; i++)
             q.add(alphabets[i]);
@@ -28,11 +29,12 @@ public class Main {
                 s = ch + s;
             
             toggle = !toggle;
-            
+            //testing
             q.add(ch);
             N = N-1;
         }
         System.out.println(s);
+        System.out.println("hello world!");
 
            }
 }
